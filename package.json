@@ -1,10 +1,10 @@
 {
-	"name": "lexer",
+	"name": "lil-lexer",
 	"version": "1.0.0",
-	"description": "basic lexer",
+	"description": "little lexer",
 	"main": "./dist/main.js",
 	"module": "./dist/bundle.js",
-	"repository": "github:seleb/lexer",
+	"repository": "github:seleb/lil-lexer",
 	"author": "Sean S. LeBlanc <sean.s.leblanc@gmail.com>",
 	"license": "MIT",
 	"dependencies": {},
@@ -17,6 +17,7 @@
 	},
 	"scripts": {
 		"test": "jest --silent --coverage",
-		"build": "rollup -c"
+		"build": "rollup -c",
+		"prepare": "npm run build"
 	}
 }

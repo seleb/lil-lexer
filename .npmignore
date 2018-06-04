@@ -1,0 +1,8 @@
+src
+.test.*
+coverage
+.babelrc
+.eslintrc
+rollup.config.js
+.gitattributes
+lil-lexer-*.tgz
