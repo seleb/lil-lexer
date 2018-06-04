@@ -2,17 +2,21 @@
 	"name": "lexer",
 	"version": "1.0.0",
 	"description": "basic lexer",
-	"main": "main.js",
+	"main": "./dist/main.js",
+	"module": "./dist/bundle.js",
 	"repository": "github:seleb/lexer",
 	"author": "Sean S. LeBlanc <sean.s.leblanc@gmail.com>",
 	"license": "MIT",
 	"dependencies": {},
 	"devDependencies": {
+		"babel-plugin-transform-object-rest-spread": "^6.26.0",
 		"babel-preset-env": "^1.6.1",
-		"jest": "^22.4.3"
+		"jest": "^22.4.3",
+		"rollup": "^0.59.4",
+		"rollup-plugin-babel": "^3.0.4"
 	},
 	"scripts": {
-		"test": "jest",
-		"test2": "jest --verbose --coverage"
+		"test": "jest --silent --coverage",
+		"build": "rollup -c"
 	}
 }

@@ -1,4 +1,4 @@
-import { getLexer } from "../main";
+import { getLexer } from "./lexer";
 
 describe("getLexer", () => {
 	it("is a function", () => {
