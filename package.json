@@ -1,6 +1,6 @@
 {
 	"name": "lil-lexer",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "little lexer",
 	"main": "./dist/main.js",
 	"module": "./dist/bundle.js",
