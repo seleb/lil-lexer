@@ -1,4 +1,4 @@
-import babel from 'rollup-plugin-babel';
+import { babel } from '@rollup/plugin-babel';
 import pkg from './package.json';
 
 export default {
@@ -15,7 +15,7 @@ export default {
 	plugins: [
 		babel({
 			exclude: 'node_modules/**',
-			externalHelpers: false,
+			babelHelpers: 'bundled',
 		}),
 	],
 }

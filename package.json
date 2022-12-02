@@ -8,16 +8,16 @@
 	"author": "Sean S. LeBlanc <sean.s.leblanc@gmail.com>",
 	"license": "MIT",
 	"devDependencies": {
-		"@babel/plugin-proposal-object-rest-spread": "^7.5.5",
-		"@babel/preset-env": "^7.5.5",
-		"jest": "^25.0.0",
-		"rollup": "^1.20.3",
-		"rollup-plugin-babel": "^4.3.3"
+		"@babel/plugin-proposal-object-rest-spread": "^7.20.2",
+		"@babel/preset-env": "^7.20.2",
+		"@rollup/plugin-babel": "^6.0.3",
+		"jest": "^24.9.0",
+		"rollup": "^3.5.1"
 	},
 	"scripts": {
 		"test": "jest --silent --coverage",
-		"build": "rollup -c",
-		"prepare": "npm run build"
+		"build": "rollup -c --bundleConfigAsCjs",
+		"postversion": "npm run build"
 	},
 	"jest": {
 		"testURL": "http://localhost"
