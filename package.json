@@ -21,5 +21,30 @@
 	},
 	"jest": {
 		"testURL": "http://localhost"
+	},
+	"release": {
+		"branches": [
+			"+([0-9])?(.{+([0-9]),x}).x",
+			"main"
+		],
+		"plugins": [
+			"@semantic-release/commit-analyzer",
+			"@semantic-release/release-notes-generator",
+			"@semantic-release/changelog",
+			"@semantic-release/npm",
+			"@semantic-release/github",
+			[
+				"@semantic-release/git",
+				{
+					"assets": [
+						"dist/*.js",
+						"README.md",
+						"CHANGELOG.md",
+						"package.json",
+						"package-lock.json"
+					]
+				}
+			]
+		]
 	}
 }
